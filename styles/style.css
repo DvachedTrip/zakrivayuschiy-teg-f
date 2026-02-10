@@ -11,6 +11,97 @@
 */
 
 .page {
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
+    min-inline-size: 320px;
+    min-block-size: 100dvb;
+    font-family: var(--main-font), sans-serif;
+    font-variation-settings: "wght" var(--p-weight);
+    background-image: var(--background-gradient);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    width: var(--block-size);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--block-background);
+    border: var(--block-border);
+}
+
+.header__container {
+    font-family: var(--accent-font);
+    padding-block: var(--header-padding);
+    margin-block: 100px;
+}
+
+.header__title {
+    font-size: var(--header-title-size);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.header__description {
+    text-transform: uppercase;
+    padding-block-start: 20px;
+    font-size: var(--header-description-size);
+}
+
+.cards__section {
+    font-size: 18px;
+}
+
+.card__title-container {
+    width: 100%;
+    border-block-end: var(--block-border);
+}
+
+.card__title {
+    font-size: 18px;
+    font-variation-settings: "wght" var(--h-weight);
+    font-weight: var(--h-weight);
+    padding: var(--card-title-padding);
+    line-height: normal;
+}
+
+.card__image-container {
+    width: 100%;
+    max-width: 696px;
+}
+
+.card__image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card__main-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px;
+}
+
+.card__text {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: var(--p-weight);
+    font-variation-settings: "wght" var(--h-weight);
+}
+
+.card__actions {
+    display: flex;
+    gap: 12px;
+    justify-content: end;
+    align-items: center;
+}
+
+.card__like-button {
+    font-family: var(--accent-font);
+    background-color: inherit;
+    border: var(--block-border);
+    padding: 10.5px 35px;
+    font-size: 14px;
+    line-height: 90%;
 }
