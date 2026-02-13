@@ -30,7 +30,7 @@ html {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    background-color: var(--block-background);
+    background-color: var(--block-background, #fff);
     border: var(--block-border);
 }
 
@@ -89,11 +89,11 @@ html {
     top: 25px;
     right: 25px;
     mix-blend-mode: hard-light;
-    text-shadow: 1px 1px 0 var(--block-background);
+    text-shadow: 1px 1px 0 var(--main-color, #fff);
 
-    @supports (-webkit-text-stroke: 1px var(--block-background)) {
+    @supports (-webkit-text-stroke: 1px var(--main-color, #fff)) {
         text-shadow: none;
-        -webkit-text-stroke: 1px var(--block-background);
+        -webkit-text-stroke: 1px var(--main-color, #fff);
     }
 }
 
@@ -134,7 +134,7 @@ html {
 .card__like-button {
     text-align: center;
     position: relative;
-    background-color: #fff;
+    background-color: var(--block-background, #fff);
     font-family: var(--accent-font);
     border: var(--block-border);
     padding: 10.5px 0px;
@@ -165,13 +165,13 @@ html {
     line-height: 150%;
     padding: 28px 38px;
     border: var(--block-border);
-    background-color: var(--block-background);
+    background-color: var(--block-background, #fff);
     text-transform: uppercase;
     max-width: 341px;
 }
 
 .dialog::backdrop {
-    background-color: #000;
+    background-color: var(--accent-color, #000);
     opacity: 75%;
 }
 
@@ -192,7 +192,7 @@ body:has(.dialog[open]) {
 
 .dialog__close-button {
     position: relative;
-    background-color: #fff;
+    background-color: var(--block-background, #fff);
     border: var(--block-border);
     padding-block: 10.5px;
     font-size: 14px;
@@ -214,8 +214,6 @@ body:has(.dialog[open]) {
     flex-shrink: 0;
     margin-block-start: 12px;
 }
-
-/* blur drop-shadow grayscale hue-rotare invert sepia saturate */
 
 .blur {
     filter: blur(3px);
