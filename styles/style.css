@@ -126,11 +126,6 @@ html {
     align-items: center;
 }
 
-.button__text {
-    font-size: 14px;
-    line-height: 90%;
-}
-
 .card__like-button {
     text-align: center;
     padding: 10.5px 0px;
