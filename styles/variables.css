@@ -4,12 +4,24 @@
     --h-weight: 715;
     --p-weight: 410;
     --block-size: clamp(375px, 50%, 700px);
+
     --block-background: #fff;
+    --main-color: #fff;
+    --accent-color: #000;
     --block-border: 2px solid #000000;
     --header-padding: clamp(7.5rem, 7.2831rem + 0.9355vw, 8.125rem);
     --header-title-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
     --header-description-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
     --card-title-padding: 4px 10px;
+    --anim-color: red;
+    --like-contour: #000;
+    --duration-contour: 0.1s;
+    --like-main-body: transparent;
+    --main-body-delay: 0s;
+    --like-core: transparent;
+    --core-delay: 0.03s;
+    --like-sparks: var(--anim-color);
+    --sparks-delay: 0s;
     --background-gradient:
         repeating-linear-gradient(
             to right,
