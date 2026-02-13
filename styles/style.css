@@ -310,7 +310,7 @@ body:has(.dialog[open]) {
     --like-main-body: var(--anim-color, red);
 }
 
-.card__icon-button.is-liked {
+.card__icon-button .is-liked {
     --like-core: var(--anim-color, red);
     --like-main-body: var(--anim-color, red);
     --like-contour: var(--anim-color, red);
